@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(205, 205, 205);
+            margin: 0px;
+        }
+        header {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: lightcoral;
+            padding: 3px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: rgb(240, 240, 188);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        section#dicas {
+            background-color: greenyellow;
+        }
+        article {
+            background-color: burlywood;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(163, 136, 100);
+        }
+        footer {
+            background-color: rgb(195, 148, 239);
+            color: rgb(161, 70, 5);
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Adne Bijus</h1>
+        <nav>
+            <a href="#">Brincos</a>
+            <a href="#">Cordões</a>
+            <a href="#">Pulseiras/Bracelete</a>
+            <a href="#">Aneis</a>
+            <a href="#">Off</a>
+        </nav>
+    </header>
+    <main>
+        <section id="dicas">
+            <p>Você sabia que as semi-jóias não é necessário fazer limpeza com frequência? Basta passar uma flanela depois do uso e ela está pronta para o próximo look.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusamus hic voluptatibus nostrum, non sed mollitia optio veniam cupiditate! Fugiat delectus laboriosam ipsum doloremque, consequatur officia inventore repudiandae vel ducimus?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Aryadne Cunha</p>
+    </footer>
+</body>
+</html>

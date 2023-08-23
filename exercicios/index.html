@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icone_casa.ico" type="image/x-icon">
+    <title>Minhas anotações HTML</title>
+</head>
+<body>
+    <h1>Notas da Aryadne</h1>
+    <h2>Meus estudos de HTML:</h2>
+    <hr>
+    <h3>Olá, Mundo!</h3>
+    <h3>Quebra de linha:</h3>
+    <p>Usamos a tag BR <br> para quebrar de forma correta.</p>
+
+    <h3>Parágrafo:</h3>
+    <p>Basta colocar tudo no meio do par de tags &lt;p&gt; e &lt;/p&gt;.<br>
+    Para fazer os sinais uso &-l-t; (tudo junto) e &-g-t-; (tudo junto)</p>
+    <!-- &lt; faz o sinal <
+        &gt; faz o sinal >-->
+
+    <h3>Símbolos especiais e Emojis:</h3>
+    <p>&trade;
+        &copy;
+        &reg;
+        &uarr;
+    </p>
+    <p>&#x1F596;
+       &#x1F913;
+    </p>
+    <!--nos emojis usa &#x e o cod-->
+
+    <h3>Banco de imgs gratuito:</h3>
+    <p><a href="https://unsplash.com/pt-br" >Unsplash</a></p>
+    <p><a href="https://www.pexels.com/pt-br/">Pexels</a></p>
+    <!--usar no máx 1500px de largura na imagem-->
+    <img src="exemplo.png" alt="Logo HTML">
+    <!-- no src eu posso botar um link de uma img na net que também funciona-->
+
+    <h3>Favicon</h3>
+    <p>O favicon é o ícone lá em cima na aba junto do título. O código é feito no head e sempre em cima do title.<br>
+    Usamos a tag link rel</p>
+    <!--o Favicon é colocado lá no head e sempre em cima do title-->
+
+    <h3>Banco de ícones:</h3>
+    <p><a href="https://www.iconarchive.com/">Icon Archive</a></p>
+    <p><a href="https://favicon.io/">Favicon Io - posso criar meu ícone com alguma img minha</a></p>
+
+    <h3>Criar parágrafos Lorem Ipsum</h3>
+    <p>Só digitar &lt;loren&gt; ele cria.</p>
+
+    <p>*Quando preciso selecionar um texto grande pra botar negrito, italico, etc, eu aperto ctrl + shift + P, depois marco a 1ª opção que aparece e depois coloco a tag que quero inserir naquele texto, por ex, se for itálico, digito I.</p>
+    <p>*Texto em <strong>negrito</strong>, usa a tag STRONG. <br>
+    *Texto em <em>itálico</em>, usa a tag EM.</p>
+    <p>*Podemos criar também <mark>um texto marcado</mark> usando a tag MARK.</p>
+    <p>*Para fazer <del>um risco no texto</del> usamos a targ DEL.</p>
+    <p>*Para <ins>sublinhar ou dar ênfase</ins> no texto usamos a tag INS. </p>
+    <p>*Para inserir texto <strong>sobrescrito</strong> usamos a tag SUP - ex: x<sup>2</sup>+3 e o <strong>subescrito</strong> a tag SUB - ex: <sub>2</sub>O.</p>
+    <p>*Quando for usar uma expressão, uma linha de código, etc, usamos a tag CODE para aquele trecho ficar com a fonte diferente e realçar - ex: <code>document.getElementById('teste')</code>.</p>
+    <p>*Se a linha de código, expressão for grande ou ela tiver que ser escrita em várinhas linhas, tudo arrumadinho, usamos a tag PRE, dentro dela a CODE e dentro dela o código - ex: <br>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'0 número {num} é PAR')
+    else:
+        print(f'0 número {num} é ÍMPAR)
+    print('Fim do programa')
+        </code>
+    </pre></p>
+    <p>*Atalho pra arrumar muitas linhas no código no VB, eu aperto shift + tab e ele vai arrumando, e se for pro outro lado, ai é só o tab.</p>
+    <p>Quando precisamos usar as "" para citação, eu seleciono <q>o trecho</q> e uso a tag Q.</p>
+    <p>*Para uma citação maior, um trecho de alguém, uso a tag BLOCKQUOTE e nela tem o CITE que eu coloco o link de onde está aquela citação. Nada acontece na minha página, porém o Google sabe que estou dando os direitos autorais. E essa tag já faz o espaçamento automático. Ex:<br>
+    <blockquote cite="https://books.google.com.br/books/about/HTML_XHTML_e_CSS_Para_Leigos.html?id=E8ZtDwAAQBAJ&redir_esc=y">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto. 
+    </blockquote></p>
+    <p>*Para usar abreviação, uso a tag ABBR - ex: <abbr title="Colégio Santa Maria">CSM</abbr></p>
+    <p>*Uma tag meio inútil é a BDO: <br> <bdo dir="ltr">Oi teste.</bdo> <br> <bdo dir="rtl">Oi teste</bdo>.</p>
+    <p>*Listas ordenadas usa a tag OL e tem os types 1, A, a, I e i</p>
+    <p>*Listas não ordenadas usa a tag LI e tem os types circle, disc e square</p>
+    <p>*Listas de definições usa a tag DL e dentro dela tem a DT e a DL. Essa lista é usada quando precisamos descrever itens listados. <br>DT é o termo e DL é a descrição desse termo.</p>
+    <p>*Para abrir um link, uso a tag A e nela vai conter o HREF_blank que diz pra abrir aquele link em outra aba e o REL é pra dar uma descrição daquele link para o navegador. <br>Tipos de REL = external quando o link é externo. <br>next que vai pra um prox link do mesmo site. <br>prev quando volta pro link principal. <br>nofollow quando não confio no site</p>
+    <p>*Se minha página tem 2 páginas, na 1ª eu linco com a tag A e seleciono a 2º pagina.</p>
+    <p>*Caso minha 2º,3º, seja qual for a página do meu site não esteja na mesma pág raiz, estiver dentro de uma sub pasta, quando eu for lincar, tenho que ir selecionando até achar o arquivo. <br>Mas se preciso fazer o inverso e direcionar para a pág principal, no caminho eu uso ../ e o nome da pág.</p>
+    <p>*Se preciso fazer download de um arquivo, eu vou usar a tag A e nela usar download="nome_do_aquivo.tipo" e também o type.</p>
+    <p>*<a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank">Tipos de mídia</a>, aqui encontro tos os types para inserir na tag A quando eu dizer que quero que faça download daquele arquivo quando clicar ali e mostra o tipo de arquivo que é.</p>
+    <p>*Imagem para celular 300x300px <br> Imagem para tablet 700x700px <br>
+    Imagem para PC 1000x1000px </p>
+    <p>*Para inserir uma imagem na tela usamos a tag PICTURE.</p>
+    <p>*Dentro de PICTURE colocaremos a imagem normalmente na tag IMG, depois sempre um nível acima colocaremos outras imgs com medidas menores, para que o usuário possa ver a img independente do dispositivo que ele vai usar usando a tag SOURCE MEDIA. <br>
+    E pra isso, usaremos a tag source media colocando sempre a medida máxima em pixel e a tag SRCSET o caminho da imagem</p>
+    
+    <h3>Audio</h3>
+    <p>Para inserir áudios, usamos a tag AUDIO. Caso ele não funcione, acrescente a tag CONTROLS, se ainda assim não, acrescente a tag AUTOPLAY.</p>
+    <!--MP3, OGG, WAV-->
+
+    <h3>Videos</h3>
+    <p>Para inserir um vídeo usamos a tag VIDEO e se ele não funcionar direto, uso a tag CONTROLS. Se eu quiser botar uma capa de abertura no meu vídeo, uso a tag POSTER. E para deixar o vídeo rodando sem parar, uso a tag LOOP.</p>
+    <!--Tamanho Máx 1080px - MP4, M4V, OGV, WEBM 
+    Importante botar em todos os formatos porque nem todos os navegadores aceitam um ou outro formato, assim eu consigo que meu vídeo funcione sempre.-->
+    <p>O site <a href="https://handbrake.fr/" target="_blank">Handbrack</a> é ótimo para diminuir vídeos e deixar mais leve.</p>
+    <p><strong>Vale resaltar que usar vídeos assim consome muito e o cliente vai gastar muito com hospedagem, não é um método recomendado!!</strong></p>
+    <p>Tem a possibilidade de inserir vídeos direto do YouTube, basta eu abrir o vídeo lá no youtube,clicar em compartilhar e depois incorporar, vai abrir uma caixinha, eu copio o código e jogo aqui e pronto.</p>
+
+    <h3>CSS</h3>
+    <p>No head eu vou criar a tag LINK CSS e crio um arquivo STYLE.CSS que nesse arquivo eu vou criar todos os estilos que ele mesmo aplica em todas as telas do meu site, independente de quantas telas tem.</p>
+    <p>Tudo sobre CSS vou colocar no arquivo style.</p>
+    <p>Site da Adobe que ajuda a criar paleta de cores: <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank">Adobe Color</a></p>
+    <p>Tem também o site <a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank">Paletton</a></p>    
+
+    <h3>ID e Class</h3>
+    <p>Quando tenho vários elementos iguais no meu site e eu quero personalizar um específicio, eu uso o id, por exe: &lt;h1 id=princial&gt;, assim eu posso personalizar esse tílulo específico e não vai para os outros h1.</p>
+    <p>Quando preciso personalizar vários elementos iguais, ao invés de usar o ID, eu uso CLASS dentro do meu seletor, por ex: &lt;h2 class ="piscar"&gt;, aqui eu digo que qualquer seletor que tiver a class piscar vai ter uma determinada configuração, que farei pelo CSS.</p>
+    <p><strong>Importante:</strong> um ID só pode ser usado num seletor, já a CLASS posso usar ela em vários.</p>
+
+    <h3>Tipos de Caixas:</h3>
+    <p><strong>Box-level</strong> (caixas que ocupam a largura toda do site, e sempre que vou inserir um conteúdo, ele vai quebrar linha e começar na próxima) <br>
+    Exemplos de box-level: div, h1, p, main, header, nav, article, aside, footer, form, video.</p>
+    <p><strong>Inline-level</strong> (caixas que se ajustam, se eu termino um parágrafo por ex, quando vou inserir outra coisa ele vai aparecer do lado, não tem quebra de linha como no box-level.)<br>
+    Exemplos de inline-level: span, a, code, small, strong, em, sup, sub, label, button, input, select.</p>
+    <p><strong>Formatando as caixas:</strong><br>
+    Dentro do &lt;style&gt; usamos: <br>
+    background-color: rgb(142, 237, 243);<br>
+    height: 300px;<br>
+    width: 300px;<br><br>
+
+    border: 10px solid blueviolet;<br>
+    /**Aqui em cima é a simplificação dessas linhas todas:<br>
+    border-width: 10px;<br>
+    border-style: solid;<br>
+    border-color: blueviolet;<br>
+    **/<br><br>
+    
+    padding: 12px 10px 15px 20px;<br>
+    /**padding-top: 12px;<br>
+    padding-right: 10px;<br>
+    padding-bottom: 15px;<br>
+    padding-left: 20px;<br>
+    **/<br><br>
+
+    margin: 10px;<br>
+    /**
+    margin-top: 10px;<br>
+    margin-right: 10px;<br>
+    margin-bottom: 10px;<br>
+    margin-left: 10px;<br>
+    
+    para centralizar só usar margin: auto; 
+    **/<br><br>
+    
+    outline: 5px dashed chartreuse;<br>
+    /**outline-width: 5px;<br>
+    outline-style: dashed;<br>
+    outline-color: chartreuse;   <br>         
+    **/</p>
+    <p></p>
+
+    
+</body>
+</html>

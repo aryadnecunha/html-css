@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas anotações CSS</title>
+</head>
+<body>
+    <h1>Notas da Aryadne</h1>
+    <h2>Meus estudos de CSS:</h2>
+    <hr>
+    <h3>1º passo importante!</h3>
+    <p>Abrir um arquivo no VS e colocar <strong>style.css</strong></p>
+    <p>Ao abrir o arquivo, a 1º coisa que preciso colocar é: <strong>@charset "UTF-8";</strong> só assim ele entende o que é letras maiúsculas, minúsculas, acento, etc.</p>
+    
+    <h3>Dicas de sites para montar paleta de cores:</h3>
+    <p>Site da Adobe: <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank">Adobe Color</a></p>
+    <p>Tem o site <a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank">Paletton</a></p>
+    <p>E também o <a href="https://coolors.co/cb48b7-2e2d4d-337357-6d9f71-e4e3d3" target="_blank">Coolors</a></p>
+    
+    <h3>Fazendo degradê:</h3>
+    <p>No HEAD crio o STYLE e dentro dele boto: <STRONG>BODY - BACKGROUND-IMAGE : LINEAR-GRADIENT (TO RIGHT, WHITE, BLUE)</STRONG><br>
+    Estou falando que quero um gradiente linear, dentro do parênteses eu defino a direção e as cores, sempre separando por vírgula. <br>
+    Ai posso ter RIGHT (começando da esquerda), TOP (de cima) E BOTTOM (de baixo) </p>
+    <p><strong>Importante!</strong> <br>
+    Dentro do Style, é importante colocar *{ height: 100%; } pra ocupar a tela toda.</p>
+    <p>Depois do código da cor, se eu colocar uma porcentagem, eu defino quantos % aquela cor vai ocupar a tela.</p>
+    
+    <h3>Elementos usados para criação de um site:</h3>
+    <ul>
+        <li>Para definir as fontes usadas: * { font-family: Arial, Helvetica, sans-serif; }</li>
+        <li>Para colocar gradiente no fundo: body { background-image: linear-gradient(to right, #F4C28D, #F29F8D); }</li>
+        <li>Para formatar um bloco de informações uso o <strong>Main</strong> e nele posso botar:
+            <ul>
+                <li>a cor do fundo: background-color: white;</li>
+                <li>uma borda: border-radius: 10px;</li>
+                <li>uma sombrinha e que defino na sequência qntos pixel para a direita, embaixo, espalhado e a cor: box-shadow: 5px 5px 15px #b95555a4;</li>
+                <li>definir a largura: width: 600px;</li>
+                <li>padding: 10px;</li>
+                <li>para centralizar: margin: auto;</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Termos muito usados para personalização com CSS:</h3>
+    <p>color: #A64B4B;</p>
+    <p>background-image: linear-gradient(to right, #F4C28D, #F29F8D);</p>
+    <p>text-align: left, center, right;</p>
+    <p>text-shadow: 1px 1px 2px #F4C28D;</p>
+    <p>Para determinar a fonte do site: font-family:</p>
+    <p>Para determinar o tamanho da fonte: font-size:</p>
+    <!-- Medidas absolutas: cm, mm, in, px, pt, pc
+    Medidas relativas: em, ex, rem, vw, vh, %
+    Geralmente 16px = 1em-->
+    <p>Para determinar o peso da fonte: font-weight:</p>
+    <!--As variações são lighter, normal, bold e bolder-->
+    <p>O font-style: serve para dizer se vai ser bold e/ou italico</p>
+    <p>Para o sublinhado usa: text-decoration: underline</p>
+    <p>Para determinar a largura da fonte: font-width:</p>
+    <p>Para determinar a altura da fonte: font-height:</p>
+    
+    <h3>Usando fontes do Google Fontes</h3>
+    <p>Vou escolher lá a fonte que quero, depois eu copio o código que sempre vai começar com @import e joga dentro do style. Depois declaro ela no seletor que vou usar usando font-family:</p>
+    <p>Obs.: Quando estiver criando um site, o ideal é usar no máximo 3 ou 4 fontes e uma paleta de cores de até 5 tons, se não fica uma salada.</p>
+    
+    <h3>Usando fontes de sites externos</h3>
+    <p>Botar a fonte na mesma pastinha do index e no style eu vou preencher assim: <br>
+    @font-face {
+        font-family: 'Arual';
+        src: url(fonts/Arual.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal; <br>
+    Depois coloco ela no seletor desejado.
+    </p>
+    <!--
+        Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded - opentype
+        - truetype-aat
+        - svg-->
+    <p>Sites para descobrir a fonte em imagens:</p>
+    <ul>
+        <li><a href="https://www.whatfontis.com/" target="_blank">https://www.whatfontis.com/ 
+        </a></li>
+        <li><a href="https://www.myfonts.com/pages/whatthefont" target="_blank">https://www.myfonts.com/pages/whatthefont</a></li>
+        <li><a href="https://www.fontsquirrel.com/" target="_blank">https://www.fontsquirrel.com/</a></li>
+    </ul>
+
+    <h3><strong>Seletores Personalizados importantissimos no CSS</strong></h3>
+    <p># é ID <br>
+    . é Class <br>
+    : é pseudo-classe (manipula dentro da class) <br>
+    :: é pseudo-elemento (manipula o conteúdo de tudo) <br>
+    > é children (filho, manipula o filho da class)</p> 
+    <p>As informações do ID sempre sobrepõe as Class</p>
+    <p>Existe também as pseudos-classes, elas servem para definir estados de elementos. <br>
+    Ex: div:hover{background-color....} aqui eu quero dizer que quando eu passar com o mouse nas divs do meu código vai mudar a cor do fundo.</p>
+    <h4>DIV</h4>
+    <p>E quando precisamos ter informações dentro de uma determinada Class e manipular essas info separadamente, vamos usar &lt;div &gt; p{....} <br>
+    Aqui diz que estou manipulando um parágrafo que está dentro de uma div.</p>
+    <p>div.hover é pra quando eu quiser que algo aconteça quando eu passar o mouse.</p>
+
+    <h3>Comandos pseudos-classes:</h3>
+    <ul>
+        <li>:hover para quando passar o mouse</li>
+        <li>:visited serve para link que já foi clicado</li>
+        <li>:active quando estiver clicando</li>
+    </ul>
+    
+    <h3>Pseudo elemento</h3>
+    <p>Ele mexe nas classes, elementos, id, ou seja, ele mexe diretamente no conteúdo.</p>
+
+    <h3>Comandos aleatórios:</h3>
+    <ul>
+        <li>display:none serve para ocultar algo</li>
+        <li>display: block serve para mostrar</li>
+        <li>display: inline-block; pra dizer que quero tudo linha de bloco</li>
+        <li>height: 200px; definir altura</li>
+        <li>width: 200px; definir largura</p></li>
+        <li>background-color: cor de fundo</li>
+        <li>border: 1px solid rgb(69, 69, 69); define a espessura da barda, se ela é sólida e a cor</li>
+        <li>text-align: center; alinhamento do texto</li>
+        <li>color definir a cor</li>
+        <li></li>
+    </ul>
+
+    <h3>Fazer degradê:</h3>
+    <p>background-image: linear-gradient(to bottom, var(cor)), var(cor));</p>
+</body>
+</html>
+    
