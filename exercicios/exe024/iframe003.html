@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi repudiandae aut tenetur reprehenderit temporibus debitis ratione animi explicabo possimus similique ipsum minima at enim rem, voluptatum quam eos minus impedit?</p>
+
+    <ul>
+        <li><a href="paginas_extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas_extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas_extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, ducimus doloremque non a quas aliquam distinctio provident amet magnam assumenda doloribus totam inventore possimus quasi deserunt eaque, voluptate hic quisquam?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo sit rem voluptatum veniam eligendi sequi architecto sapiente molestiae adipisci in alias eum et nesciunt, omnis fuga quae accusamus a eius.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis distinctio consectetur tenetur soluta, ex asperiores adipisci ipsa voluptas sequi quae laborum voluptate accusamus maiores vero consequuntur et quo. Tempora, aliquam.</p>"">
+        <p>Infelizmente seu navegador não é compatível com isso</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magni ullam doloribus quia, obcaecati eveniet fuga illo aliquid ut nam at error sit suscipit perspiciatis praesentium incidunt velit natus eligendi!</p>
+</body>
+</html>
